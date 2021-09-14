@@ -5,7 +5,7 @@ name: Python application
 
 on:
   schedule:
-    - cron: '30,30 3,14 * * 1-5'
+    - cron: '30 3 * * 1-5'
 
 jobs:
   build:
@@ -31,4 +31,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest -k test_morning -s -v
