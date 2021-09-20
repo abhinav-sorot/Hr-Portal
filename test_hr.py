@@ -38,7 +38,7 @@ def test_morning():
 
         payload = "{\n    \"requestType\": \"A\",\n    \"employeeId\": 116,\n    \"latitude\": " \
                   "\"\",\n    \"longitude\": \"\",\n    \"geoAccuracy\": \"\"," \
-                  f"\n    \"geoLocation\": \"\",\n    \"punchTime\": \"{latest_date}T10:00\"," \
+                  f"\n    \"geoLocation\": \"\",\n    \"punchTime\": \"{latest_date}T10:25\"," \
                   "\n    \"uploadedPhotoOneName\": \"\",\n    \"uploadedPhotoOnePath\": \"\",\n    \"uploadedPhotoTwoName\": \"\",\n    \"uploadedPhotoTwoPath\": \"\",\n    \"attendanceSource\": \"W\",\n    \"attendanceType\": \"Online\"\n}"
 
         response = requests.request("POST", url, headers=headers, data=payload)
