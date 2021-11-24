@@ -4,6 +4,7 @@
 name: morning
 
 on:
+
   schedule:
     - cron: '30 4 * * 1-5'
 
