@@ -8,6 +8,7 @@ import requests
 def test_morning():
 
     try:
+        
         latest_date = datetime.today().strftime('%Y-%m-%d')
         url = "https://hroneauthapi.hrone.cloud/oauth2/token"
 
