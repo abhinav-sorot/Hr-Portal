@@ -5,7 +5,8 @@ import json
 import pytest
 import requests
 
-def test_morning():
+@pytest.mark.parametrize('test', range(2))
+def test_morning(test):
 
     try:
         
@@ -49,7 +50,8 @@ def test_morning():
     except Exception as e:
         assert False
 
-def test_evening():
+@pytest.mark.parametrize('test', range(2))
+def test_evening(test):
 
     try:
         latest_date = datetime.today().strftime('%Y-%m-%d')
